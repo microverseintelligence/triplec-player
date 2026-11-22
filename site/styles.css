@@ -227,3 +227,4 @@ input[type=range]:active::-webkit-slider-thumb{transform:scale(1.25)}
 .empty{color:var(--muted);text-align:center;padding:30px 10px;margin:0}
 .more-wrap{display:flex;justify-content:center;margin:18px 0 4px}
 .more-wrap .text-btn{padding:0 18px}
+.icon-btn[hidden],.text-btn[hidden],.empty[hidden]{display:none}
