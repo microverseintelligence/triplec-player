@@ -1,0 +1,1680 @@
+[
+ {
+  "id": "km-anaanamalie",
+  "title": "Anamalie",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 208,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-anaanamalie.mp3",
+  "cover": "covers/km-anaanamalie.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-anaallada",
+  "title": "Allada",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 223,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-anaallada.mp3",
+  "cover": "covers/km-anaallada.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "204446",
+  "title": "Shiva's Blossom",
+  "artist": "Koi-discovery",
+  "album": "",
+  "duration": 259,
+  "moods": [
+   "energy",
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/204446.mp3",
+  "cover": "covers/204446.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/koi-discovery/hypercube/shiva-s-blossom/",
+  "original": false
+ },
+ {
+  "id": "km-anabumbacrossing",
+  "title": "Bumba Crossing",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 277,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-anabumbacrossing.mp3",
+  "cover": "covers/km-anabumbacrossing.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-anazanzibar",
+  "title": "Zanzibar",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 219,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-anazanzibar.mp3",
+  "cover": "covers/km-anazanzibar.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "134936",
+  "title": "Drum Solo",
+  "artist": "Turku, Nomads of the Silk Road",
+  "album": "",
+  "duration": 153,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/134936.mp3",
+  "cover": "covers/134936.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Turku_Nomads_of_the_Silk_Road/Alleys_of_Istanbul/09_-Drum_Solo/",
+  "original": false
+ },
+ {
+  "id": "km-ananaraina",
+  "title": "Naraina",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 211,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/km-ananaraina.mp3",
+  "cover": "covers/km-ananaraina.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-anavadodorachillmix",
+  "title": "Vadodora Chill Mix",
+  "artist": "Kevin MacLeod",
+  "album": "Anamalie",
+  "duration": 223,
+  "moods": [
+   "rhythm",
+   "calm"
+  ],
+  "src": "audio/km-anavadodorachillmix.mp3",
+  "cover": "covers/km-anavadodorachillmix.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "276825",
+  "title": "Old Bollywood Cinematic With Strings and Tabla",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 208,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/276825.mp3",
+  "cover": "covers/276825.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/cinematic-epic-trailers-vol-3/old-bollywood-cinematic-with-strings-and-tabla/",
+  "original": false
+ },
+ {
+  "id": "km-daraccralate",
+  "title": "Accralate",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 305,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-daraccralate.mp3",
+  "cover": "covers/km-daraccralate.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-dararidfoothills",
+  "title": "Arid Foothills",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 198,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-dararidfoothills.mp3",
+  "cover": "covers/km-dararidfoothills.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279192",
+  "title": "Indian Music",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 203,
+  "moods": [
+   "rhythm",
+   "mantra"
+  ],
+  "src": "audio/279192.mp3",
+  "cover": "covers/279192.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/indian-music-2/",
+  "original": false
+ },
+ {
+  "id": "km-dardigya",
+  "title": "Digya",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 167,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-dardigya.mp3",
+  "cover": "covers/km-dardigya.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-dardubakupado",
+  "title": "Dubakupado",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 213,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-dardubakupado.mp3",
+  "cover": "covers/km-dardubakupado.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279197",
+  "title": "Indian Classical Music",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 216,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/279197.mp3",
+  "cover": "covers/279197.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/indian-classical-music/",
+  "original": false
+ },
+ {
+  "id": "km-darinfados",
+  "title": "Infados",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 223,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-darinfados.mp3",
+  "cover": "covers/km-darinfados.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-darwhimsygroove",
+  "title": "Whimsy Groove",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 261,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-darwhimsygroove.mp3",
+  "cover": "covers/km-darwhimsygroove.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279200",
+  "title": "Krishna Music",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 234,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/279200.mp3",
+  "cover": "covers/279200.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/krishna-music-1/",
+  "original": false
+ },
+ {
+  "id": "km-darkumasigroove",
+  "title": "Kumasi Groove",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 223,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-darkumasigroove.mp3",
+  "cover": "covers/km-darkumasigroove.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-dartafimaradi",
+  "title": "Tafi Maradi",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 159,
+  "moods": [
+   "drums",
+   "mantra"
+  ],
+  "src": "audio/km-dartafimaradi.mp3",
+  "cover": "covers/km-dartafimaradi.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "277165",
+  "title": "Tabla Music With Warm Rhythmic Cycles",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 201,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/277165.mp3",
+  "cover": "covers/277165.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/documentary-storytelling-vol-2/tabla-music-with-warm-rhythmic-cycles/",
+  "original": false
+ },
+ {
+  "id": "km-darslowheat",
+  "title": "Slow Heat",
+  "artist": "Kevin MacLeod",
+  "album": "Dark Continent",
+  "duration": 223,
+  "moods": [
+   "rhythm",
+   "calm"
+  ],
+  "src": "audio/km-darslowheat.mp3",
+  "cover": "covers/km-darslowheat.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-pribirchrun",
+  "title": "Birch Run",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 267,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-pribirchrun.mp3",
+  "cover": "covers/km-pribirchrun.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279196",
+  "title": "Krishna Flute Music",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 201,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/279196.mp3",
+  "cover": "covers/279196.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/krishna-flute-music/",
+  "original": false
+ },
+ {
+  "id": "km-pridamamay",
+  "title": "Dama-May",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 314,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-pridamamay.mp3",
+  "cover": "covers/km-pridamamay.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-prifirebrand",
+  "title": "Firebrand",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 359,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-prifirebrand.mp3",
+  "cover": "covers/km-prifirebrand.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "194424",
+  "title": "Kindling",
+  "artist": "Axletree",
+  "album": "",
+  "duration": 251,
+  "moods": [
+   "rhythm",
+   "calm"
+  ],
+  "src": "audio/194424.mp3",
+  "cover": "covers/194424.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Axletree/kindling/kindling/",
+  "original": false
+ },
+ {
+  "id": "km-prifiresong",
+  "title": "Firesong",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 213,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-prifiresong.mp3",
+  "cover": "covers/km-prifiresong.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-prilagoav1",
+  "title": "Lagoa V1",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 231,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-prilagoav1.mp3",
+  "cover": "covers/km-prilagoav1.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "240373",
+  "title": "Aad Guray Namay (Mangala Charan Mantra)",
+  "artist": "Lopkerjo",
+  "album": "",
+  "duration": 131,
+  "moods": [
+   "mantra"
+  ],
+  "src": "audio/240373.mp3",
+  "cover": "covers/240373.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/john-lopker/meditation-chants/aad-guray-namay-mangala-charan-mantra/",
+  "original": false
+ },
+ {
+  "id": "km-prinightoftheowl",
+  "title": "Night of the Owl",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 233,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-prinightoftheowl.mp3",
+  "cover": "covers/km-prinightoftheowl.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-pririteofpassage",
+  "title": "Rite of Passage",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 281,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-pririteofpassage.mp3",
+  "cover": "covers/km-pririteofpassage.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "276926",
+  "title": "Afrobeats Dance With Warm Percussion",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 127,
+  "moods": [
+   "energy",
+   "drums"
+  ],
+  "src": "audio/276926.mp3",
+  "cover": "covers/276926.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/electronic-dance-vol-1/afrobeats-dance-with-warm-percussion/",
+  "original": false
+ },
+ {
+  "id": "km-pristompdance",
+  "title": "StompDance",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 223,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-pristompdance.mp3",
+  "cover": "covers/km-pristompdance.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-prithunderhead",
+  "title": "Thunderhead",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 175,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-prithunderhead.mp3",
+  "cover": "covers/km-prithunderhead.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "276958",
+  "title": "Indian Instrumental Music With Warm Percussion",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 195,
+  "moods": [
+   "rhythm",
+   "drums"
+  ],
+  "src": "audio/276958.mp3",
+  "cover": "covers/276958.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/folk-world/indian-instrumental-music-with-warm-percussion/",
+  "original": false
+ },
+ {
+  "id": "km-pritikopia",
+  "title": "Tikopia",
+  "artist": "Kevin MacLeod",
+  "album": "Primal Drive",
+  "duration": 228,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-pritikopia.mp3",
+  "cover": "covers/km-pritikopia.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-spiriverfire",
+  "title": "River Fire",
+  "artist": "Kevin MacLeod",
+  "album": "Spirit",
+  "duration": 400,
+  "moods": [
+   "calm",
+   "mantra"
+  ],
+  "src": "audio/km-spiriverfire.mp3",
+  "cover": "covers/km-spiriverfire.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "277070",
+  "title": "Jungle Frequency With Heavy Tribal Percussion",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 143,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/277070.mp3",
+  "cover": "covers/277070.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/moods-atmospheres-vol-5/jungle-frequency-with-heavy-tribal-percussion/",
+  "original": false
+ },
+ {
+  "id": "km-tharites",
+  "title": "Rites",
+  "artist": "Kevin MacLeod",
+  "album": "Thatched Villagers",
+  "duration": 127,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-tharites.mp3",
+  "cover": "covers/km-tharites.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-tharitual",
+  "title": "Ritual",
+  "artist": "Kevin MacLeod",
+  "album": "Thatched Villagers",
+  "duration": 264,
+  "moods": [
+   "drums",
+   "mantra"
+  ],
+  "src": "audio/km-tharitual.mp3",
+  "cover": "covers/km-tharitual.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "264793",
+  "title": "Peaceful Tribal Humble",
+  "artist": "Lenny Pixels",
+  "album": "",
+  "duration": 99,
+  "moods": [
+   "drums",
+   "calm"
+  ],
+  "src": "audio/264793.mp3",
+  "cover": "covers/264793.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/lenny-pixels/the-noise-of-the-jungle/peaceful-tribal-humble/",
+  "original": false
+ },
+ {
+  "id": "km-thatempleofthemanes",
+  "title": "Temple of the Manes",
+  "artist": "Kevin MacLeod",
+  "album": "Thatched Villagers",
+  "duration": 156,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/km-thatempleofthemanes.mp3",
+  "cover": "covers/km-thatempleofthemanes.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-traarcane",
+  "title": "Arcane",
+  "artist": "Kevin MacLeod",
+  "album": "Traveller",
+  "duration": 323,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-traarcane.mp3",
+  "cover": "covers/km-traarcane.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "264795",
+  "title": "Hardcore Tribal Pride",
+  "artist": "Lenny Pixels",
+  "album": "",
+  "duration": 129,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/264795.mp3",
+  "cover": "covers/264795.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/lenny-pixels/the-noise-of-the-jungle/hardcore-tribal-pride/",
+  "original": false
+ },
+ {
+  "id": "km-traindore",
+  "title": "Indore",
+  "artist": "Kevin MacLeod",
+  "album": "Traveller",
+  "duration": 225,
+  "moods": [
+   "rhythm",
+   "mantra"
+  ],
+  "src": "audio/km-traindore.mp3",
+  "cover": "covers/km-traindore.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-trauntitledafricanrhythm",
+  "title": "Untitled African Rhythm",
+  "artist": "Kevin MacLeod",
+  "album": "Traveller",
+  "duration": 98,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-trauntitledafricanrhythm.mp3",
+  "cover": "covers/km-trauntitledafricanrhythm.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "173005",
+  "title": "Only Our Footsteps in the Sand",
+  "artist": "Mid-Air Machine",
+  "album": "",
+  "duration": 132,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/173005.mp3",
+  "cover": "covers/173005.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Ask%20Again/everywhere-outside-world-fusion-1/only-our-footsteps-in-the-sand/",
+  "original": false
+ },
+ {
+  "id": "km-vadasiandrums",
+  "title": "Asian Drums",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 139,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-vadasiandrums.mp3",
+  "cover": "covers/km-vadasiandrums.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadbalzangroove",
+  "title": "Balzan Groove",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 125,
+  "moods": [
+   "rhythm",
+   "energy"
+  ],
+  "src": "audio/km-vadbalzangroove.mp3",
+  "cover": "covers/km-vadbalzangroove.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279199",
+  "title": "Krishna Bansuri",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 203,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/279199.mp3",
+  "cover": "covers/279199.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/krishna-bansuri/",
+  "original": false
+ },
+ {
+  "id": "km-vadbigmojo",
+  "title": "Big Mojo",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 157,
+  "moods": [
+   "rhythm",
+   "energy"
+  ],
+  "src": "audio/km-vadbigmojo.mp3",
+  "cover": "covers/km-vadbigmojo.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadchanter",
+  "title": "Chanter",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 86,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/km-vadchanter.mp3",
+  "cover": "covers/km-vadchanter.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "279194",
+  "title": "Arabic Music",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 125,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/279194.mp3",
+  "cover": "covers/279194.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-devotional-music/arabic-music/",
+  "original": false
+ },
+ {
+  "id": "km-vaddesertcity",
+  "title": "Desert City",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 89,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-vaddesertcity.mp3",
+  "cover": "covers/km-vaddesertcity.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vaddhaka",
+  "title": "Dhaka",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 248,
+  "moods": [
+   "rhythm",
+   "drums"
+  ],
+  "src": "audio/km-vaddhaka.mp3",
+  "cover": "covers/km-vaddhaka.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "240376",
+  "title": "Om Mani Padme Hum",
+  "artist": "Lopkerjo",
+  "album": "",
+  "duration": 131,
+  "moods": [
+   "mantra"
+  ],
+  "src": "audio/240376.mp3",
+  "cover": "covers/240376.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/john-lopker/meditation-chants/om-mani-padme-hum/",
+  "original": false
+ },
+ {
+  "id": "km-vadeastoftunesia",
+  "title": "East of Tunesia",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 102,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-vadeastoftunesia.mp3",
+  "cover": "covers/km-vadeastoftunesia.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadeasternthought",
+  "title": "Eastern Thought",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 262,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/km-vadeasternthought.mp3",
+  "cover": "covers/km-vadeasternthought.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "272697",
+  "title": "Sacred India",
+  "artist": "Geoff Harvey - Purple Planet Music",
+  "album": "",
+  "duration": 94,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/272697.mp3",
+  "cover": "covers/272697.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/geoff-harvey-purple-planet-music/indian-life/sacred-india-1/",
+  "original": false
+ },
+ {
+  "id": "km-vadhimalayanatmosphere",
+  "title": "Himalayan Atmosphere",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 230,
+  "moods": [
+   "calm",
+   "mantra"
+  ],
+  "src": "audio/km-vadhimalayanatmosphere.mp3",
+  "cover": "covers/km-vadhimalayanatmosphere.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadibnalnoor",
+  "title": "Ibn Al-Noor",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 218,
+  "moods": [
+   "rhythm"
+  ],
+  "src": "audio/km-vadibnalnoor.mp3",
+  "cover": "covers/km-vadibnalnoor.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "272695",
+  "title": "Indian Ambiance",
+  "artist": "Geoff Harvey - Purple Planet Music",
+  "album": "",
+  "duration": 109,
+  "moods": [
+   "mantra",
+   "calm"
+  ],
+  "src": "audio/272695.mp3",
+  "cover": "covers/272695.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/geoff-harvey-purple-planet-music/indian-life/indian-ambiance/",
+  "original": false
+ },
+ {
+  "id": "km-vadishikarilore",
+  "title": "Ishikari Lore",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 164,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/km-vadishikarilore.mp3",
+  "cover": "covers/km-vadishikarilore.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadjalandhar",
+  "title": "Jalandhar",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 249,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/km-vadjalandhar.mp3",
+  "cover": "covers/km-vadjalandhar.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "162290",
+  "title": "Mantra",
+  "artist": "Evan Schaeffer",
+  "album": "",
+  "duration": 205,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/162290.mp3",
+  "cover": "covers/162290.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Evan_Schaeffer/Big_Splash/Evan_Schaeffer_-_04_-_Mantra/",
+  "original": false
+ },
+ {
+  "id": "km-vadvadodara",
+  "title": "Vadodara",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 223,
+  "moods": [
+   "rhythm",
+   "drums"
+  ],
+  "src": "audio/km-vadvadodara.mp3",
+  "cover": "covers/km-vadvadodara.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadopium",
+  "title": "Opium",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 369,
+  "moods": [
+   "rhythm",
+   "calm"
+  ],
+  "src": "audio/km-vadopium.mp3",
+  "cover": "covers/km-vadopium.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "204526",
+  "title": "Tribal Archétype",
+  "artist": "Koi-discovery",
+  "album": "",
+  "duration": 424,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/204526.mp3",
+  "cover": "covers/204526.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/koi-discovery/gaz-mask/tribal-archetype/",
+  "original": false
+ },
+ {
+  "id": "km-vadtabuk",
+  "title": "Tabuk",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 159,
+  "moods": [
+   "drums",
+   "energy"
+  ],
+  "src": "audio/km-vadtabuk.mp3",
+  "cover": "covers/km-vadtabuk.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "194862",
+  "title": "Mist Drum Master",
+  "artist": "John Bartmann",
+  "album": "",
+  "duration": 244,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/194862.mp3",
+  "cover": "covers/194862.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/John_Bartmann/100-ambient-atmospheric-soundtracks-straylight-drones-collection/mist-drum-master/",
+  "original": false
+ },
+ {
+  "id": "195100",
+  "title": "Tribal Beatbox Beach Song",
+  "artist": "John Bartmann",
+  "album": "",
+  "duration": 181,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/195100.mp3",
+  "cover": "covers/195100.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/John_Bartmann/beachy-beatbox-ukulele-music/tribal-beatbox-beach-song/",
+  "original": false
+ },
+ {
+  "id": "140933",
+  "title": "Evening Drum",
+  "artist": "Nihilore",
+  "album": "",
+  "duration": 148,
+  "moods": [
+   "drums",
+   "rhythm"
+  ],
+  "src": "audio/140933.mp3",
+  "cover": "covers/140933.webp",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "source_url": "https://freemusicarchive.org/music/Nihilore/The_Hermeneutic_Circle/Nihilore_-_The_Hermeneutic_Circle_-_12_Evening_Drum/",
+  "original": false
+ },
+ {
+  "id": "118922",
+  "title": "Modulation of the Spirit",
+  "artist": "Little Glass Men",
+  "album": "",
+  "duration": 244,
+  "moods": [
+   "rhythm",
+   "lofi"
+  ],
+  "src": "audio/118922.mp3",
+  "cover": "covers/118922.webp",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/",
+  "source_url": "https://freemusicarchive.org/music/Little_Glass_Men/Debut_EP/Modulation_of_the_Spirit_WB/",
+  "original": false
+ },
+ {
+  "id": "245138",
+  "title": "Some Bass & Drums",
+  "artist": "Amarent",
+  "album": "",
+  "duration": 187,
+  "moods": [
+   "energy",
+   "drums"
+  ],
+  "src": "audio/245138.mp3",
+  "cover": "covers/245138.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/amarent/free-electronic-music/some-bass-drums/",
+  "original": false
+ },
+ {
+  "id": "272696",
+  "title": "Masala Madness",
+  "artist": "Geoff Harvey - Purple Planet Music",
+  "album": "",
+  "duration": 171,
+  "moods": [
+   "energy",
+   "rhythm"
+  ],
+  "src": "audio/272696.mp3",
+  "cover": "covers/272696.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/geoff-harvey-purple-planet-music/indian-life/masala-madness-1/",
+  "original": false
+ },
+ {
+  "id": "277125",
+  "title": "Rajasthan Music With Bright Desert Colour",
+  "artist": "Alex Morgan",
+  "album": "",
+  "duration": 184,
+  "moods": [
+   "rhythm",
+   "mantra"
+  ],
+  "src": "audio/277125.mp3",
+  "cover": "covers/277125.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/alex-morgan/world-celebration-vol-1/rajasthan-music-with-bright-desert-colour/",
+  "original": false
+ },
+ {
+  "id": "287254",
+  "title": "Om",
+  "artist": "L'Esprit d'Sfign",
+  "album": "",
+  "duration": 230,
+  "moods": [
+   "mantra",
+   "rhythm"
+  ],
+  "src": "audio/287254.mp3",
+  "cover": "covers/287254.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/lesprit-dsfign/om/om/",
+  "original": false
+ },
+ {
+  "id": "242429",
+  "title": "One Night In France",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 195,
+  "moods": [
+   "lofi"
+  ],
+  "src": "audio/242429.mp3",
+  "cover": "covers/242429.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/one-night-in-france-lofi-nostalgic-chill/",
+  "original": false
+ },
+ {
+  "id": "243304",
+  "title": "Tranquil Mindscape",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 154,
+  "moods": [
+   "calm",
+   "lofi"
+  ],
+  "src": "audio/243304.mp3",
+  "cover": "covers/243304.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/tranquil-mindscape-lofi-happy-reflection/",
+  "original": false
+ },
+ {
+  "id": "265835",
+  "title": "Calm Currents",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 148,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/265835.mp3",
+  "cover": "covers/265835.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/calm-currents-lofi-relax-calm/",
+  "original": false
+ },
+ {
+  "id": "245668",
+  "title": "Theta Frequency",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 127,
+  "moods": [
+   "calm",
+   "lofi"
+  ],
+  "src": "audio/245668.mp3",
+  "cover": "covers/245668.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/theta-frequency-lofi-chill-calm/",
+  "original": false
+ },
+ {
+  "id": "243305",
+  "title": "Tokyo Sunset",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 139,
+  "moods": [
+   "lofi"
+  ],
+  "src": "audio/243305.mp3",
+  "cover": "covers/243305.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/tokyo-sunset-lofi-peaceful-soft/",
+  "original": false
+ },
+ {
+  "id": "265836",
+  "title": "Peaceful Drift",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 128,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/265836.mp3",
+  "cover": "covers/265836.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/peaceful-drift-lofi-nostalgic-calm/",
+  "original": false
+ },
+ {
+  "id": "265849",
+  "title": "Into The Mist",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 130,
+  "moods": [
+   "calm",
+   "lofi"
+  ],
+  "src": "audio/265849.mp3",
+  "cover": "covers/265849.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/into-the-mist-lofi-calm-relaxed/",
+  "original": false
+ },
+ {
+  "id": "265847",
+  "title": "Ease into Night",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 152,
+  "moods": [
+   "calm",
+   "lofi"
+  ],
+  "src": "audio/265847.mp3",
+  "cover": "covers/265847.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/ease-into-night-lofi-relax-chill/",
+  "original": false
+ },
+ {
+  "id": "265848",
+  "title": "Infinite Echoes",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 140,
+  "moods": [
+   "calm",
+   "lofi"
+  ],
+  "src": "audio/265848.mp3",
+  "cover": "covers/265848.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/infinite-echoes-lofi-dreamy-soft/",
+  "original": false
+ },
+ {
+  "id": "265844",
+  "title": "Wetlands",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 164,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/265844.mp3",
+  "cover": "covers/265844.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/wetlands-lofi-calm-relaxed/",
+  "original": false
+ },
+ {
+  "id": "265846",
+  "title": "Dreamy Reverie",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 144,
+  "moods": [
+   "lofi"
+  ],
+  "src": "audio/265846.mp3",
+  "cover": "covers/265846.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/dreamy-reverie-lofi-nostalgic-chill/",
+  "original": false
+ },
+ {
+  "id": "268741",
+  "title": "Ocean Memory",
+  "artist": "HoliznaCC0",
+  "album": "OCEAN MEMORY ( Lo-fi Chill )",
+  "duration": 151,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/268741.mp3",
+  "cover": "covers/268741.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/ocean-memory-lo-fi-chill/ocean-memory/",
+  "original": false
+ },
+ {
+  "id": "279362",
+  "title": "Kodama",
+  "artist": "HoliznaCC0",
+  "album": "Nature Spirit",
+  "duration": 151,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/279362.mp3",
+  "cover": "covers/279362.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/nature-spirit/kodama/",
+  "original": false
+ },
+ {
+  "id": "266327",
+  "title": "Lullabies For The End Of The World #1",
+  "artist": "HoliznaCC0",
+  "album": "Lullabies For The End Of The World",
+  "duration": 165,
+  "moods": [
+   "lofi",
+   "calm"
+  ],
+  "src": "audio/266327.mp3",
+  "cover": "covers/266327.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/lullabies-for-the-end-of-the-world/lullabies-for-the-end-of-the-world-1/",
+  "original": false
+ },
+ {
+  "id": "238389",
+  "title": "Shimmer",
+  "artist": "HoliznaCC0",
+  "album": "Public Domain Lofi",
+  "duration": 181,
+  "moods": [
+   "lofi"
+  ],
+  "src": "audio/238389.mp3",
+  "cover": "covers/238389.webp",
+  "license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_url": "https://freemusicarchive.org/music/holiznacc0/public-domain-lofi/shimmer-lofi-chill/",
+  "original": false
+ },
+ {
+  "id": "km-spitruthinthestones",
+  "title": "Truth in the Stones",
+  "artist": "Kevin MacLeod",
+  "album": "Spirit",
+  "duration": 373,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/km-spitruthinthestones.mp3",
+  "cover": "covers/km-spitruthinthestones.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "km-vadripples",
+  "title": "Ripples",
+  "artist": "Kevin MacLeod",
+  "album": "Vadodara",
+  "duration": 205,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/km-vadripples.mp3",
+  "cover": "covers/km-vadripples.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://archive.org/details/KevinMacLeod_2019-04_Discography",
+  "original": false
+ },
+ {
+  "id": "238351",
+  "title": "Centering in Stillness",
+  "artist": "Brylie Christopher Oxley",
+  "album": "Tides of Change",
+  "duration": 217,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/238351.mp3",
+  "cover": "covers/238351.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Brylie_Christopher_Oxley/tides-of-change/centering-in-stillness/",
+  "original": false
+ },
+ {
+  "id": "238355",
+  "title": "Gentle Presence",
+  "artist": "Brylie Christopher Oxley",
+  "album": "Tides of Change",
+  "duration": 328,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/238355.mp3",
+  "cover": "covers/238355.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Brylie_Christopher_Oxley/tides-of-change/gentle-presence/",
+  "original": false
+ },
+ {
+  "id": "256503",
+  "title": "Breathing Space",
+  "artist": "Brylie Christopher Oxley",
+  "album": "Sojourn",
+  "duration": 349,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/256503.mp3",
+  "cover": "covers/256503.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Brylie_Christopher_Oxley/sojourn/breathing-space/",
+  "original": false
+ },
+ {
+  "id": "256500",
+  "title": "Peaceful Moment",
+  "artist": "Brylie Christopher Oxley",
+  "album": "New Beginnings",
+  "duration": 293,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/256500.mp3",
+  "cover": "covers/256500.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Brylie_Christopher_Oxley/new-beginnings/peaceful-moment/",
+  "original": false
+ },
+ {
+  "id": "233888",
+  "title": "Dawn Chorus",
+  "artist": "Brylie Christopher Oxley",
+  "album": "Murmurations",
+  "duration": 515,
+  "moods": [
+   "calm"
+  ],
+  "src": "audio/233888.mp3",
+  "cover": "covers/233888.webp",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "source_url": "https://freemusicarchive.org/music/Brylie_Christopher_Oxley/murmurations/dawn-chorus/",
+  "original": false
+ }
+]
