@@ -15,7 +15,7 @@
       'play.all': 'Слушать', 'orig.title': 'Оригиналы Triple C', 'orig.text': 'Здесь появятся наши собственные треки. Скоро.',
       'orig.badge': 'Оригинал', 'orig.full': 'Оригинал Triple C', 'orig.tip': 'Трек Triple C',
       'foot.only': 'Музыка доступна только для прослушивания в Triple C.',
-      'foot.rights': 'Треки каталога принадлежат их авторам и используются по открытым лицензиям (CC0, CC BY 3.0 и CC BY 4.0). Обложки — оригинальные иллюстрации Triple C.',
+      'foot.rights': 'Треки каталога принадлежат их авторам и используются по открытым лицензиям (CC0, CC BY 3.0 и CC BY 4.0). Часть треков воспроизводится напрямую с сайтов-источников. Обложки — оригинальные иллюстрации Triple C.',
       'foot.credits': 'Авторы и лицензии',
       'mini.open': 'Открыть плеер', prev: 'Предыдущий', next: 'Следующий', play: 'Играть', pause: 'Пауза',
       player: 'Плеер', collapse: 'Свернуть', 'now.playing': 'Сейчас звучит', seek: 'Перемотка',
@@ -26,6 +26,12 @@
       'cr.license': 'Лицензия', 'cr.album': 'Альбом', 'cr.source': 'Источник', 'cr.artist': 'страница автора',
       'cr.changes': 'Перекодировано в MP3 128 kbps, метаданные удалены. Обложка — оригинальная иллюстрация Triple C.',
       'cr.archive': 'архив Internet Archive',
+      'search.ph': 'Поиск: трек или автор', 'search.label': 'Поиск', 'search.clear': 'Очистить',
+      'genre.label': 'Жанр', 'genre.all': 'Все жанры', 'genre.ethno': 'Этно', 'genre.drums': 'Барабаны', 'genre.mantra': 'Мантры',
+      'genre.electronic': 'Электроника', 'genre.downtempo': 'Даунтемпо', 'genre.lofi': 'Лофи', 'genre.ambient': 'Эмбиент',
+      'genre.cinematic': 'Кино', 'genre.neoclassical': 'Неоклассика', 'genre.acoustic': 'Акустика',
+      'empty': 'Ничего не нашлось. Попробуй другой запрос или жанр.', 'more': 'Показать ещё',
+      'cr.changes.remote': 'Воспроизводится напрямую с сайта-источника, без изменений. Обложка — оригинальная иллюстрация Triple C.',
     },
     en: {
       'doc.title': 'Triple C — rhythm, mantras and calm',
@@ -40,7 +46,7 @@
       'play.all': 'Play', 'orig.title': 'Triple C Originals', 'orig.text': 'Our own tracks will appear here. Soon.',
       'orig.badge': 'Original', 'orig.full': 'Triple C Original', 'orig.tip': 'Triple C track',
       'foot.only': 'Music is available for listening in Triple C only.',
-      'foot.rights': 'Catalog tracks belong to their authors and are used under open licenses (CC0, CC BY 3.0 and CC BY 4.0). Cover art is original Triple C artwork.',
+      'foot.rights': 'Catalog tracks belong to their authors and are used under open licenses (CC0, CC BY 3.0 and CC BY 4.0). Some tracks stream directly from their source sites. Cover art is original Triple C artwork.',
       'foot.credits': 'Credits & licenses',
       'mini.open': 'Open player', prev: 'Previous', next: 'Next', play: 'Play', pause: 'Pause',
       player: 'Player', collapse: 'Collapse', 'now.playing': 'Now playing', seek: 'Seek',
@@ -51,6 +57,12 @@
       'cr.license': 'License', 'cr.album': 'Album', 'cr.source': 'Source', 'cr.artist': 'artist page',
       'cr.changes': 'Transcoded to MP3 128 kbps, metadata removed. Cover is original Triple C artwork.',
       'cr.archive': 'Internet Archive',
+      'search.ph': 'Search tracks or artists', 'search.label': 'Search', 'search.clear': 'Clear',
+      'genre.label': 'Genre', 'genre.all': 'All genres', 'genre.ethno': 'Ethno', 'genre.drums': 'Drums', 'genre.mantra': 'Mantras',
+      'genre.electronic': 'Electronic', 'genre.downtempo': 'Downtempo', 'genre.lofi': 'Lo-fi', 'genre.ambient': 'Ambient',
+      'genre.cinematic': 'Cinematic', 'genre.neoclassical': 'Neoclassical', 'genre.acoustic': 'Acoustic',
+      'empty': 'Nothing found. Try another search or genre.', 'more': 'Show more',
+      'cr.changes.remote': 'Streamed directly from the source site, unmodified. Cover is original Triple C artwork.',
     },
   };
   const KEY = 'tc.lang';
@@ -70,6 +82,7 @@
     document.documentElement.lang = lang;
     root.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
     root.querySelectorAll('[data-i18n-aria]').forEach((el) => el.setAttribute('aria-label', t(el.dataset.i18nAria)));
+    root.querySelectorAll('[data-i18n-ph]').forEach((el) => el.setAttribute('placeholder', t(el.dataset.i18nPh)));
     root.querySelectorAll('[data-i18n-title]').forEach((el) => el.setAttribute('title', t(el.dataset.i18nTitle)));
     const dt = document.body && document.body.dataset.titleKey;
     if (dt) document.title = t(dt);

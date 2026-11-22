@@ -9,6 +9,8 @@
     { id: 'lofi', color: '#8fb3ff' },
     { id: 'calm', color: '#7fd1b9' },
   ];
+  const GENRES = ['all', 'ethno', 'drums', 'mantra', 'electronic', 'downtempo', 'lofi', 'ambient', 'cinematic', 'neoclassical', 'acoustic'];
+  const PAGE = 60;
   const T = (k, v) => window.TC.t(k, v);
   const moodLabel = (id) => T('mood.' + id);
   const moodTitle = (id) => id === 'all' ? T('title.all') : moodLabel(id);
@@ -22,6 +24,10 @@
   let tracks = [];
   let mood = store.get('mood', 'all');
   let view = store.get('view', 'grid');
+  let genre = store.get('genre', 'all');
+  let query = '';
+  let shown = PAGE;
+  let io = null;
   let queue = [];        // ids of the current play queue
   let qi = -1;           // index in queue
   let shuffle = store.get('shuffle', false);
@@ -31,7 +37,12 @@
   const fmt = (s) => { s = Math.max(0, Math.floor(s || 0)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; };
   const byId = (id) => tracks.find((t) => t.id === id);
   const current = () => byId(queue[qi]);
-  const filtered = () => mood === 'all' ? tracks : tracks.filter((t) => t.moods.includes(mood));
+  const norm = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g, '').replace(/ё/g, 'е');
+  const filtered = () => {
+    const words = norm(query).split(/\s+/).filter(Boolean);
+    return tracks.filter((t) => (mood === 'all' || t.moods.includes(mood)) && (genre === 'all' || t.genre === genre)
+      && (!words.length || words.every((w) => t._s.includes(w))));
+  };
   const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
   function greeting() {
@@ -50,13 +61,17 @@
       const b = e.target.closest('.chip'); if (!b) return;
       mood = b.dataset.mood; store.set('mood', mood);
       nav.querySelectorAll('.chip').forEach((c) => c.setAttribute('aria-pressed', c.dataset.mood === mood));
-      renderCatalog();
+      resetAndRender();
     };
   }
 
   function renderCatalog() {
-    const list = filtered();
-    $('#catalogTitle').textContent = `${moodTitle(mood)} · ${list.length}`;
+    const all = filtered();
+    const list = all.slice(0, shown);
+    const gt = genre !== 'all' ? ` · ${T('genre.' + genre)}` : '';
+    $('#catalogTitle').textContent = `${moodTitle(mood)}${gt} · ${all.length}`;
+    $('#empty').hidden = all.length > 0;
+    $('#more').hidden = all.length <= shown;
     const el = $('#catalog');
     el.className = `catalog ${view}`;
     const cur = current();
@@ -78,6 +93,24 @@
           <span class="d">${fmt(t.duration)}</span>
         </button>`).join('');
     }
+  }
+
+  function resetAndRender() { shown = PAGE; renderCatalog(); }
+  function showMore() { if (filtered().length > shown) { shown += PAGE; renderCatalog(); } }
+
+  function renderGenres() {
+    const nav = $('#genres');
+    nav.innerHTML = GENRES.map((g) => {
+      const n = g === 'all' ? tracks.length : tracks.filter((t) => t.genre === g).length;
+      if (!n) return '';
+      return `<button class="gchip" data-genre="${g}" aria-pressed="${g === genre}">${esc(T('genre.' + g))}<span class="cnt">${n}</span></button>`;
+    }).join('');
+    nav.onclick = (e) => {
+      const b = e.target.closest('.gchip'); if (!b) return;
+      genre = b.dataset.genre; store.set('genre', genre);
+      nav.querySelectorAll('.gchip').forEach((c) => c.setAttribute('aria-pressed', c.dataset.genre === genre));
+      resetAndRender();
+    };
   }
 
   function setView(v) {
@@ -212,6 +245,15 @@
   function bind() {
     $('#catalog').addEventListener('click', (e) => { const b = e.target.closest('[data-id]'); if (b) playId(b.dataset.id); });
     document.querySelectorAll('[data-view]').forEach((b) => b.addEventListener('click', () => setView(b.dataset.view)));
+    let qt = null;
+    $('#q').addEventListener('input', (e) => { clearTimeout(qt); qt = setTimeout(() => { query = e.target.value; $('#qClear').hidden = !query; resetAndRender(); }, 120); });
+    $('#q').addEventListener('keydown', (e) => { if (e.key === 'Escape') { e.target.value = ''; query = ''; $('#qClear').hidden = true; resetAndRender(); } });
+    $('#qClear').addEventListener('click', () => { $('#q').value = ''; query = ''; $('#qClear').hidden = true; resetAndRender(); $('#q').focus(); });
+    $('#more').addEventListener('click', showMore);
+    if ('IntersectionObserver' in window) {
+      io = new IntersectionObserver((ents) => { if (ents.some((x) => x.isIntersecting)) showMore(); }, { rootMargin: '600px 0px' });
+      io.observe($('#more'));
+    }
     $('#playAll').addEventListener('click', () => { const l = filtered(); if (!l.length) return; const start = shuffle ? l[Math.floor(Math.random() * l.length)] : l[0]; buildQueue(start.id); load(start); });
     $('#miniOpen').addEventListener('click', openPlayer);
     $('#playerClose').addEventListener('click', closePlayer);
@@ -264,7 +306,10 @@
     bind();
     const res = await fetch('tracks.json', { cache: 'no-cache' });
     tracks = await res.json();
+    tracks.forEach((t) => { t._s = norm(`${t.title} ${t.artist} ${t.album || ''}`); });
     if (!MOODS.some((m) => m.id === mood)) mood = 'all';
+    if (!GENRES.includes(genre)) genre = 'all';
+    renderGenres();
     renderMoods(); setView(view); syncModes(); setVol(store.get('vol', 0.85));
     const last = byId(store.get('last', ''));
     if (last) {
@@ -274,7 +319,7 @@
     }
     syncPlayState();
     window.TC.onChange(() => {
-      greeting(); renderMoods(); renderCatalog(); syncModes(); syncPlayState();
+      greeting(); renderMoods(); renderGenres(); renderCatalog(); syncModes(); syncPlayState();
       const c = current(); if (c) updateNowPlaying(c);
     });
     if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
