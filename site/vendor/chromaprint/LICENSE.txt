@@ -1,0 +1,3 @@
+Chromaprint WASM build from @unimusic/chromaprint 0.1.4 (wrapper: MIT).
+Chromaprint (c) Lukáš Lalinský, LGPL-2.1 — https://github.com/acoustid/chromaprint
+Source: https://www.npmjs.com/package/@unimusic/chromaprint
