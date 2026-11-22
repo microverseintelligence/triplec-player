@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Triple C — музыка с ритмом и мантрами</title>
+  <meta name="description" content="Triple C — живые барабаны, мантры, этно-ритмы, лофи и покой.">
+  <meta name="theme-color" content="#0e0d12">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Triple C">
+  <meta name="robots" content="noindex">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-title-key="doc.title">
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.6v12.8c0 .8.9 1.3 1.6.9l10-6.4c.6-.4.6-1.4 0-1.8l-10-6.4C8.9 4.3 8 4.8 8 5.6z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6.5" y="5" width="4" height="14" rx="1.4" fill="currentColor"/><rect x="13.5" y="5" width="4" height="14" rx="1.4" fill="currentColor"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 6.6v10.8c0 .8.9 1.3 1.6.8l8.1-5.4c.6-.4.6-1.3 0-1.7L6.6 5.8C5.9 5.3 5 5.8 5 6.6z" fill="currentColor"/><rect x="16.5" y="5.5" width="2.6" height="13" rx="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M19 6.6v10.8c0 .8-.9 1.3-1.6.8l-8.1-5.4c-.6-.4-.6-1.3 0-1.7l8.1-5.3c.7-.5 1.6 0 1.6.8z" fill="currentColor"/><rect x="4.9" y="5.5" width="2.6" height="13" rx="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3.2c1.7 0 3.2.9 4.1 2.3l3.4 5.4c.9 1.4 2.4 2.3 4.1 2.3H21"/><path d="M3 17h3.2c1.2 0 2.3-.5 3.1-1.3M14.7 8.3c.8-.8 1.9-1.3 3.1-1.3H21"/><path d="M18.5 4.5 21 7l-2.5 2.5M18.5 14.5 21 17l-2.5 2.5"/></g></symbol>
+    <symbol id="i-repeat" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11V9.5A3.5 3.5 0 0 1 7.5 6H19"/><path d="M16.5 3.5 19 6l-2.5 2.5"/><path d="M20 13v1.5a3.5 3.5 0 0 1-3.5 3.5H5"/><path d="M7.5 20.5 5 18l2.5-2.5"/></g></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><g fill="currentColor"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></g></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><g fill="currentColor"><rect x="4" y="5" width="4" height="4" rx="1.3"/><rect x="10" y="6" width="10" height="2" rx="1"/><rect x="4" y="10" width="4" height="4" rx="1.3"/><rect x="10" y="11" width="10" height="2" rx="1"/><rect x="4" y="15" width="4" height="4" rx="1.3"/><rect x="10" y="16" width="10" height="2" rx="1"/></g></symbol>
+    <symbol id="i-vol" viewBox="0 0 24 24"><path d="M4 9.5v5c0 .6.4 1 1 1h2.6l4 3.4c.6.5 1.4.1 1.4-.7V5.8c0-.8-.9-1.2-1.4-.7l-4 3.4H5c-.6 0-1 .4-1 1z" fill="currentColor"/><path d="M16 9a4.2 4.2 0 0 1 0 6M18.6 6.5a7.8 7.8 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5v5c0 .6.4 1 1 1h2.6l4 3.4c.6.5 1.4.1 1.4-.7V5.8c0-.8-.9-1.2-1.4-.7l-4 3.4H5c-.6 0-1 .4-1 1z" fill="currentColor"/><path d="m16.5 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></g></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="9" y="3.5" width="6" height="11" rx="3" fill="currentColor" stroke="none"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/></g></symbol>
+    <symbol id="i-mark" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4.2" transform="translate(32 32)"><path d="M23.4 -13.5 A 27 27 0 1 0 23.4 13.5"/><path d="M15.6 -9 A 18 18 0 1 0 15.6 9" opacity=".8"/><path d="M7.8 -4.5 A 9 9 0 1 0 7.8 4.5" opacity=".6"/></g></symbol>
+  </svg>
+
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+
+  <div class="app">
+    <header class="top">
+      <a class="brand" href="./" aria-label="Triple C">
+        <svg class="brand-mark"><use href="#i-mark"/></svg>
+        <span class="brand-name">Triple C</span>
+        <span class="beta" data-i18n="beta">бета</span>
+      </a>
+      <div class="top-actions">
+      <div class="lang-switch" role="group" aria-label="Язык интерфейса" data-i18n-aria="lang.label">
+        <button data-lang="ru" aria-pressed="true" lang="ru">RU</button><button data-lang="en" aria-pressed="false" lang="en">EN</button>
+      </div>
+      <div class="view-toggle" role="group" aria-label="Вид каталога" data-i18n-aria="view.label">
+        <button class="icon-btn small" data-view="grid" aria-label="Сеткой" data-i18n-aria="view.grid" aria-pressed="true"><svg><use href="#i-grid"/></svg></button>
+        <button class="icon-btn small" data-view="list" aria-label="Списком" aria-pressed="false" data-i18n-aria="view.list"><svg><use href="#i-list"/></svg></button>
+      </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <p class="eyebrow" id="greeting">Добрый вечер</p>
+        <h1 data-i18n="hero.q">Что тебе сейчас нужно?</h1>
+      </section>
+
+      <div class="search-row">
+      <div class="search">
+        <svg class="search-ic" aria-hidden="true"><use href="#i-search"/></svg>
+        <input id="q" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Поиск: трек или автор" data-i18n-ph="search.ph" aria-label="Поиск" data-i18n-aria="search.label">
+        <button class="icon-btn small" id="qClear" hidden aria-label="Очистить" data-i18n-aria="search.clear"><svg><use href="#i-x"/></svg></button>
+      </div>
+      <button class="hear-btn" id="hearOpen" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-mic"/></svg><span data-i18n="hear.btn">Слышу</span></button>
+      </div>
+      <nav class="moods" id="moods" aria-label="Настроение" data-i18n-aria="moods.label"></nav>
+      <nav class="genres" id="genres" aria-label="Жанр" data-i18n-aria="genre.label"></nav>
+
+      <section class="catalog-head">
+        <h2 id="catalogTitle">Все треки</h2>
+        <button class="text-btn" id="playAll"><svg><use href="#i-play"/></svg><span data-i18n="play.all">Слушать</span></button>
+      </section>
+
+      <section id="catalog" class="catalog grid" aria-live="polite"></section>
+      <p class="empty" id="empty" hidden data-i18n="empty">Ничего не нашлось. Попробуй другой запрос или жанр.</p>
+      <div class="more-wrap"><button class="text-btn" id="more" hidden data-i18n="more">Показать ещё</button></div>
+
+      <section class="originals">
+        <div class="originals-card">
+          <div class="originals-art" aria-hidden="true"><svg><use href="#i-mark"/></svg></div>
+          <div>
+            <h3 data-i18n="orig.title">Оригиналы Triple C</h3>
+            <p data-i18n="orig.text">Здесь появятся наши собственные треки. Скоро.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p><strong data-i18n="foot.only">Музыка доступна только для прослушивания в Triple C.</strong></p>
+        <p><span data-i18n="foot.rights">Треки каталога принадлежат их авторам и используются по открытым лицензиям (CC0, CC BY 3.0 и CC BY 4.0). Часть треков воспроизводится напрямую с сайтов-источников. Обложки — оригинальные иллюстрации Triple C.</span> <a href="credits.html" data-i18n="foot.credits">Авторы и лицензии</a></p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- Mini player -->
+  <div class="mini" id="mini" hidden>
+    <div class="mini-progress"><span id="miniBar"></span></div>
+    <button class="mini-open" id="miniOpen" aria-label="Открыть плеер" data-i18n-aria="mini.open">
+      <img id="miniCover" alt="" width="48" height="48">
+      <span class="mini-text"><span class="mini-title" id="miniTitle"></span><span class="mini-artist" id="miniArtist"></span></span>
+    </button>
+    <button class="icon-btn" id="miniPrev" aria-label="Предыдущий" data-i18n-aria="prev"><svg><use href="#i-prev"/></svg></button>
+    <button class="icon-btn play-sm" id="miniPlay" aria-label="Играть"><svg><use href="#i-play"/></svg></button>
+    <button class="icon-btn" id="miniNext" aria-label="Следующий" data-i18n-aria="next"><svg><use href="#i-next"/></svg></button>
+  </div>
+
+  <!-- Full-screen player -->
+  <section class="player" id="player" aria-hidden="true" aria-label="Плеер" data-i18n-aria="player">
+    <div class="player-bg" id="playerBg"></div>
+    <div class="player-inner">
+      <div class="player-top">
+        <button class="icon-btn" id="playerClose" aria-label="Свернуть" data-i18n-aria="collapse"><svg><use href="#i-down"/></svg></button>
+        <span class="player-label" id="playerMood">Сейчас звучит</span>
+        <span class="icon-btn ghost" aria-hidden="true"></span>
+      </div>
+      <div class="art-wrap"><img class="art" id="art" alt=""></div>
+      <div class="player-side">
+      <div class="meta">
+        <div class="meta-text">
+          <h2 id="pTitle"></h2>
+          <p id="pArtist"></p>
+        </div>
+        <a class="lic" id="pLicense" href="credits.html" target="_self"></a>
+      </div>
+      <div class="seek">
+        <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Перемотка" data-i18n-aria="seek">
+        <div class="times"><span id="tCur">0:00</span><span id="tDur">0:00</span></div>
+      </div>
+      <div class="controls">
+        <button class="icon-btn toggle" id="shuffle" aria-label="Перемешать" data-i18n-aria="shuffle" aria-pressed="false"><svg><use href="#i-shuffle"/></svg></button>
+        <button class="icon-btn big" id="prev" aria-label="Предыдущий" data-i18n-aria="prev"><svg><use href="#i-prev"/></svg></button>
+        <button class="play-lg" id="play" aria-label="Играть"><svg><use href="#i-play"/></svg></button>
+        <button class="icon-btn big" id="next" aria-label="Следующий" data-i18n-aria="next"><svg><use href="#i-next"/></svg></button>
+        <button class="icon-btn toggle" id="repeat" aria-label="Повтор" aria-pressed="false"><svg><use href="#i-repeat"/></svg><span class="rep-one" id="repOne">1</span></button>
+      </div>
+      <div class="volume">
+        <button class="icon-btn small" id="mute" aria-label="Звук" data-i18n-aria="mute"><svg><use href="#i-vol"/></svg></button>
+        <input type="range" id="vol" min="0" max="100" value="85" aria-label="Громкость" data-i18n-aria="volume">
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Hear: music recognition -->
+  <div class="hear" id="hear" hidden role="dialog" aria-modal="true" aria-labelledby="hearTitle">
+    <div class="hear-backdrop" data-hear-close></div>
+    <div class="hear-card">
+      <div class="hear-top">
+        <h2 id="hearTitle"><svg aria-hidden="true"><use href="#i-mic"/></svg><span data-i18n="hear.title">Слышу</span></h2>
+        <button class="icon-btn small" data-hear-close aria-label="Закрыть" data-i18n-aria="hear.close"><svg><use href="#i-x"/></svg></button>
+      </div>
+      <div class="hear-stage">
+        <button class="hear-orb" id="hearOrb" aria-label="Слушать" data-i18n-aria="hear.start">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <span class="orb-core"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>
+        </button>
+        <canvas class="hear-wave" id="hearWave" width="600" height="80" aria-hidden="true"></canvas>
+        <p class="hear-status" id="hearStatus" aria-live="polite"></p>
+        <p class="hear-hint" id="hearHint"></p>
+      </div>
+      <ol class="hear-steps" id="hearSteps" hidden></ol>
+      <div class="hear-results" id="hearResults" aria-live="polite"></div>
+      <p class="hear-foot" data-i18n="hear.privacy">Запись не сохраняется и не отправляется: каталог и отпечатки проверяются прямо в браузере. Только для поиска песни по словам распознанный текст уходит в бесплатный сервис.</p>
+    </div>
+  </div>
+  <audio id="audio" preload="metadata" controlslist="nodownload noplaybackrate"></audio>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+  <script src="hear/fp.js" defer></script>
+  <script src="hear/config.js" defer></script>
+  <script src="hear/hear.js" defer></script>
+</body>
+</html>

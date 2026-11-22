@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Авторы и лицензии — Triple C</title>
+  <meta name="theme-color" content="#0e0d12">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .credits{max-width:820px;margin:0 auto;padding:calc(14px + env(safe-area-inset-top,0px)) 20px 60px;position:relative;z-index:1}
+    .credits h1{font-size:clamp(26px,6vw,38px);margin:22px 0 10px}
+    .lead{color:var(--muted);max-width:62ch;margin:0 0 22px}
+    .lic-sum{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+    .lic-sum span{font-size:13px;font-weight:700;padding:6px 10px;border-radius:10px;background:rgba(255,255,255,.05);border:1px solid var(--line)}
+    .item{display:grid;grid-template-columns:52px minmax(0,1fr);gap:14px;padding:14px 0;border-top:1px solid var(--line);scroll-margin-top:20px}
+    .item:target{background:rgba(233,185,141,.06);border-radius:12px}
+    .item img{width:52px;height:52px;border-radius:12px;object-fit:cover}
+    .item h3{margin:0;font-size:15px}
+    .item p{margin:3px 0 0;font-size:13px;color:var(--muted);overflow-wrap:anywhere}
+    .item a{color:var(--accent-2)}
+    .back{display:inline-flex;align-items:center;gap:6px;color:var(--text);text-decoration:none;font-weight:700;height:44px}
+    .back svg{width:20px;height:20px;transform:rotate(90deg)}
+    .cr-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  </style>
+</head>
+<body data-title-key="credits.doc.title">
+  <div class="ambient" aria-hidden="true"></div>
+  <main class="credits">
+    <div class="cr-top">
+    <a class="back" href="./"><svg viewBox="0 0 24 24"><path d="m6 9.5 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="cr.back">Назад к плееру</span></a>
+    <div class="lang-switch" role="group" aria-label="Язык интерфейса" data-i18n-aria="lang.label"><button data-lang="ru" aria-pressed="true" lang="ru">RU</button><button data-lang="en" aria-pressed="false" lang="en">EN</button></div>
+    </div>
+    <h1 data-i18n="cr.h1">Авторы и лицензии</h1>
+    <p class="lead" data-i18n="cr.lead">Музыка доступна только для прослушивания в Triple C. Треки каталога созданы указанными ниже авторами и используются по открытым лицензиям, разрешающим в том числе коммерческое использование. Права на эти треки принадлежат их авторам: Triple C их не присваивает. Обложки — оригинальные иллюстрации Triple C. Собственные треки Triple C будут отмечены как «Оригинал Triple C».</p>
+    <div class="lic-sum" id="sum"></div>
+    <div id="list"></div>
+  </main>
+  <script src="i18n.js"></script>
+  <script>
+  (async () => {
+    const esc = (s) => String(s || '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const [cr, tr] = await Promise.all([fetch('credits.json').then(r => r.json()), fetch('tracks.json').then(r => r.json())]);
+    const byId = Object.fromEntries(cr.tracks.map(c => [c.id, c]));
+    const counts = {};
+    tr.forEach(t => { counts[t.license] = (counts[t.license] || 0) + 1; });
+    document.getElementById('sum').innerHTML = Object.entries(counts).map(([k, v]) => `<span>${esc(k)} · ${v}</span>`).join('');
+    const T = (k) => window.TC.t(k);
+    const src = (x) => String(x || '').replace('архив Internet Archive', T('cr.archive'));
+    const render = () => { document.getElementById('list').innerHTML = tr.map(t => {
+      const c = byId[t.id] || {};
+      return `<div class="item" id="t-${esc(t.id)}"><img src="${esc(t.cover)}" alt="" loading="lazy">
+        <div><h3>${window.TC.lang === 'en' ? '“' : '«'}${esc(t.title)}${window.TC.lang === 'en' ? '”' : '»'} — ${esc(c.artist || t.artist)}</h3>
+        <p>${c.attribution ? esc(c.attribution) + '<br>' : ''}${T('cr.license')}: <a href="${esc(c.license_url)}" target="_blank" rel="noopener">${esc(c.license)}</a>${c.album ? ' · ' + T('cr.album') + ': ' + esc(c.album) : ''}</p>
+        <p>${T('cr.source')}: <a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(src(c.source))}</a>${c.artist_page ? ' · <a href="' + esc(c.artist_page) + '" target="_blank" rel="noopener">' + esc(T('cr.artist')) + '</a>' : ''}</p>
+        <p>${esc(T(String(c.changes || '').startsWith('Воспроизводится') ? 'cr.changes.remote' : 'cr.changes'))}</p></div></div>`;
+    }).join(''); };
+    render(); window.TC.onChange(render);
+    if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
+  })();
+  </script>
+</body>
+</html>
