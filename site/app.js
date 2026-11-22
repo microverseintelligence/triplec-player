@@ -1,15 +1,17 @@
 (() => {
   'use strict';
   const MOODS = [
-    { id: 'all', label: 'Все', color: '#f3efe8' },
-    { id: 'energy', label: 'Энергия', color: '#ff8a4c' },
-    { id: 'rhythm', label: 'Ритм', color: '#f2c14e' },
-    { id: 'mantra', label: 'Мантры', color: '#e98ad6' },
-    { id: 'drums', label: 'Барабаны', color: '#d9773b' },
-    { id: 'lofi', label: 'Лофи', color: '#8fb3ff' },
-    { id: 'calm', label: 'Покой', color: '#7fd1b9' },
+    { id: 'all', color: '#f3efe8' },
+    { id: 'energy', color: '#ff8a4c' },
+    { id: 'rhythm', color: '#f2c14e' },
+    { id: 'mantra', color: '#e98ad6' },
+    { id: 'drums', color: '#d9773b' },
+    { id: 'lofi', color: '#8fb3ff' },
+    { id: 'calm', color: '#7fd1b9' },
   ];
-  const MOOD_TITLES = { all: 'Все треки', energy: 'Энергия', rhythm: 'Ритм', mantra: 'Мантры', drums: 'Барабаны', lofi: 'Лофи', calm: 'Покой' };
+  const T = (k, v) => window.TC.t(k, v);
+  const moodLabel = (id) => T('mood.' + id);
+  const moodTitle = (id) => id === 'all' ? T('title.all') : moodLabel(id);
   const $ = (s) => document.querySelector(s);
   const audio = $('#audio');
   const store = {
@@ -34,7 +36,7 @@
 
   function greeting() {
     const h = new Date().getHours();
-    $('#greeting').textContent = h < 5 ? 'Доброй ночи' : h < 12 ? 'Доброе утро' : h < 18 ? 'Добрый день' : 'Добрый вечер';
+    $('#greeting').textContent = T(h < 5 ? 'greet.night' : h < 12 ? 'greet.morning' : h < 18 ? 'greet.day' : 'greet.evening');
   }
 
   function renderMoods() {
@@ -42,7 +44,7 @@
     nav.innerHTML = MOODS.map((m) => {
       const n = m.id === 'all' ? tracks.length : tracks.filter((t) => t.moods.includes(m.id)).length;
       if (!n) return '';
-      return `<button class="chip" data-mood="${m.id}" aria-pressed="${m.id === mood}" style="--c:${m.color}"><span class="dot"></span>${m.label}<span class="cnt">${n}</span></button>`;
+      return `<button class="chip" data-mood="${m.id}" aria-pressed="${m.id === mood}" style="--c:${m.color}"><span class="dot"></span>${esc(moodLabel(m.id))}<span class="cnt">${n}</span></button>`;
     }).join('');
     nav.onclick = (e) => {
       const b = e.target.closest('.chip'); if (!b) return;
@@ -54,7 +56,7 @@
 
   function renderCatalog() {
     const list = filtered();
-    $('#catalogTitle').textContent = `${MOOD_TITLES[mood] || 'Все треки'} · ${list.length}`;
+    $('#catalogTitle').textContent = `${moodTitle(mood)} · ${list.length}`;
     const el = $('#catalog');
     el.className = `catalog ${view}`;
     const cur = current();
@@ -64,7 +66,7 @@
         <button class="card${cur && cur.id === t.id ? ' active' : ''}" data-id="${t.id}" aria-label="${esc(t.title)} — ${esc(t.artist)}">
           <div class="cover"><img src="${t.cover}" alt="" loading="${i < 10 ? 'eager' : 'lazy'}" decoding="async" width="300" height="300">
             <span class="fab"><svg><use href="#${cur && cur.id === t.id && playing ? 'i-pause' : 'i-play'}"/></svg></span></div>
-          <div class="t">${t.original ? '<span class="orig">Оригинал</span>' : ''}${esc(t.title)}</div>
+          <div class="t">${t.original ? `<span class="orig">${T('orig.badge')}</span>` : ''}${esc(t.title)}</div>
           <div class="a">${esc(t.artist)}</div>
         </button>`).join('');
     } else {
@@ -141,17 +143,16 @@
     } catch {}
   }
 
-  const MOOD_LABEL = Object.fromEntries(MOODS.map((m) => [m.id, m.label]));
   function updateNowPlaying(t) {
     $('#mini').hidden = false;
     $('#miniCover').src = t.cover; $('#miniTitle').textContent = t.title; $('#miniArtist').textContent = t.artist;
     $('#art').src = t.cover; $('#pTitle').textContent = t.title; $('#pArtist').textContent = t.artist;
     $('#playerBg').style.backgroundImage = `url("${t.cover}")`;
-    $('#playerMood').textContent = t.moods.map((m) => MOOD_LABEL[m]).filter(Boolean).join(' · ') || 'Сейчас звучит';
+    $('#playerMood').textContent = t.moods.filter((m) => MOODS.some((x) => x.id === m)).map(moodLabel).join(' · ') || T('now.playing');
     const lic = $('#pLicense');
-    lic.textContent = t.original ? 'Оригинал Triple C' : t.license;
+    lic.textContent = t.original ? T('orig.full') : t.license;
     lic.href = `credits.html#t-${t.id}`;
-    lic.title = t.original ? 'Трек Triple C' : `Лицензия: ${t.license}. Автор: ${t.artist}`;
+    lic.title = t.original ? T('orig.tip') : T('lic.tip', { l: t.license, a: t.artist });
     const img = new Image(); img.onload = () => tintFrom(img); img.src = t.cover;
     document.title = `${t.title} — Triple C`;
     if ('mediaSession' in navigator) {
@@ -167,7 +168,7 @@
     const playing = !audio.paused;
     const icon = playing ? '#i-pause' : '#i-play';
     $('#play use').setAttribute('href', icon); $('#miniPlay use').setAttribute('href', icon);
-    $('#play').setAttribute('aria-label', playing ? 'Пауза' : 'Играть'); $('#miniPlay').setAttribute('aria-label', playing ? 'Пауза' : 'Играть');
+    $('#play').setAttribute('aria-label', T(playing ? 'pause' : 'play')); $('#miniPlay').setAttribute('aria-label', T(playing ? 'pause' : 'play'));
     $('#player').classList.toggle('playing', playing);
     if ('mediaSession' in navigator) navigator.mediaSession.playbackState = playing ? 'playing' : 'paused';
     const cur = current();
@@ -199,7 +200,7 @@
     $('#shuffle').setAttribute('aria-pressed', shuffle);
     $('#repeat').setAttribute('aria-pressed', repeat !== 'off');
     $('#repeat').classList.toggle('one', repeat === 'one');
-    $('#repeat').setAttribute('aria-label', repeat === 'one' ? 'Повтор одного' : repeat === 'all' ? 'Повтор всех' : 'Повтор');
+    $('#repeat').setAttribute('aria-label', T(repeat === 'one' ? 'repeat.one' : repeat === 'all' ? 'repeat.all' : 'repeat'));
   }
 
   function setVol(v) {
@@ -272,6 +273,10 @@
       audio.addEventListener('loadedmetadata', () => { if (pos && pos < audio.duration - 5) audio.currentTime = pos; }, { once: true });
     }
     syncPlayState();
+    window.TC.onChange(() => {
+      greeting(); renderMoods(); renderCatalog(); syncModes(); syncPlayState();
+      const c = current(); if (c) updateNowPlaying(c);
+    });
     if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
   }
   init();
