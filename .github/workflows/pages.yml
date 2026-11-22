@@ -20,7 +20,7 @@ jobs:
           set -e
           mkdir -p dist/covers dist/icons dist/audio
           cp -r site/* dist/
-          for a in assets covers2; do cat $a.tgz.b64.part* | base64 -d | tar xz -C dist; done
+          for a in assets covers2 hear; do cat $a.tgz.b64.part* | base64 -d | tar xz -C dist; done
           ls dist/covers | wc -l
           touch dist/.nojekyll
       - name: Cache audio
