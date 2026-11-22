@@ -1,6 +1,6 @@
 // Triple C service worker: app shell is network-first (fresh during beta), covers cache-first.
 // Audio is never cached by the service worker.
-const CACHE = 'triplec-v2';
+const CACHE = 'triplec-v3';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'i18n.js', 'tracks.json', 'manifest.webmanifest', 'manifest.en.webmanifest', 'icons/icon.svg', 'icons/icon-192.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));

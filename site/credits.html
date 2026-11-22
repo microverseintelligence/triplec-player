@@ -56,7 +56,7 @@
         <div><h3>${window.TC.lang === 'en' ? '“' : '«'}${esc(t.title)}${window.TC.lang === 'en' ? '”' : '»'} — ${esc(c.artist || t.artist)}</h3>
         <p>${c.attribution ? esc(c.attribution) + '<br>' : ''}${T('cr.license')}: <a href="${esc(c.license_url)}" target="_blank" rel="noopener">${esc(c.license)}</a>${c.album ? ' · ' + T('cr.album') + ': ' + esc(c.album) : ''}</p>
         <p>${T('cr.source')}: <a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(src(c.source))}</a>${c.artist_page ? ' · <a href="' + esc(c.artist_page) + '" target="_blank" rel="noopener">' + esc(T('cr.artist')) + '</a>' : ''}</p>
-        <p>${esc(T('cr.changes'))}</p></div></div>`;
+        <p>${esc(T(String(c.changes || '').startsWith('Воспроизводится') ? 'cr.changes.remote' : 'cr.changes'))}</p></div></div>`;
     }).join(''); };
     render(); window.TC.onChange(render);
     if (location.hash) { const el = document.querySelector(location.hash); if (el) el.scrollIntoView(); }
