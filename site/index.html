@@ -35,6 +35,7 @@
     <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.5v5c0 .6.4 1 1 1h2.6l4 3.4c.6.5 1.4.1 1.4-.7V5.8c0-.8-.9-1.2-1.4-.7l-4 3.4H5c-.6 0-1 .4-1 1z" fill="currentColor"/><path d="m16.5 9.5 5 5m0-5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
     <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></g></symbol>
     <symbol id="i-x" viewBox="0 0 24 24"><path d="m7 7 10 10M17 7 7 17" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="9" y="3.5" width="6" height="11" rx="3" fill="currentColor" stroke="none"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v2.5"/></g></symbol>
     <symbol id="i-mark" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4.2" transform="translate(32 32)"><path d="M23.4 -13.5 A 27 27 0 1 0 23.4 13.5"/><path d="M15.6 -9 A 18 18 0 1 0 15.6 9" opacity=".8"/><path d="M7.8 -4.5 A 9 9 0 1 0 7.8 4.5" opacity=".6"/></g></symbol>
   </svg>
 
@@ -64,10 +65,13 @@
         <h1 data-i18n="hero.q">Что тебе сейчас нужно?</h1>
       </section>
 
+      <div class="search-row">
       <div class="search">
         <svg class="search-ic" aria-hidden="true"><use href="#i-search"/></svg>
         <input id="q" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Поиск: трек или автор" data-i18n-ph="search.ph" aria-label="Поиск" data-i18n-aria="search.label">
         <button class="icon-btn small" id="qClear" hidden aria-label="Очистить" data-i18n-aria="search.clear"><svg><use href="#i-x"/></svg></button>
+      </div>
+      <button class="hear-btn" id="hearOpen" aria-haspopup="dialog"><svg aria-hidden="true"><use href="#i-mic"/></svg><span data-i18n="hear.btn">Слышу</span></button>
       </div>
       <nav class="moods" id="moods" aria-label="Настроение" data-i18n-aria="moods.label"></nav>
       <nav class="genres" id="genres" aria-label="Жанр" data-i18n-aria="genre.label"></nav>
@@ -147,8 +151,34 @@
     </div>
   </section>
 
+
+  <!-- Hear: music recognition -->
+  <div class="hear" id="hear" hidden role="dialog" aria-modal="true" aria-labelledby="hearTitle">
+    <div class="hear-backdrop" data-hear-close></div>
+    <div class="hear-card">
+      <div class="hear-top">
+        <h2 id="hearTitle"><svg aria-hidden="true"><use href="#i-mic"/></svg><span data-i18n="hear.title">Слышу</span></h2>
+        <button class="icon-btn small" data-hear-close aria-label="Закрыть" data-i18n-aria="hear.close"><svg><use href="#i-x"/></svg></button>
+      </div>
+      <div class="hear-stage">
+        <button class="hear-orb" id="hearOrb" aria-label="Слушать" data-i18n-aria="hear.start">
+          <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+          <span class="orb-core"><svg aria-hidden="true"><use href="#i-mic"/></svg></span>
+        </button>
+        <canvas class="hear-wave" id="hearWave" width="600" height="80" aria-hidden="true"></canvas>
+        <p class="hear-status" id="hearStatus" aria-live="polite"></p>
+        <p class="hear-hint" id="hearHint"></p>
+      </div>
+      <ol class="hear-steps" id="hearSteps" hidden></ol>
+      <div class="hear-results" id="hearResults" aria-live="polite"></div>
+      <p class="hear-foot" data-i18n="hear.privacy">Запись не сохраняется и не отправляется: каталог и отпечатки проверяются прямо в браузере. Только для поиска песни по словам распознанный текст уходит в бесплатный сервис.</p>
+    </div>
+  </div>
   <audio id="audio" preload="metadata" controlslist="nodownload noplaybackrate"></audio>
   <script src="i18n.js"></script>
   <script src="app.js"></script>
+  <script src="hear/fp.js" defer></script>
+  <script src="hear/config.js" defer></script>
+  <script src="hear/hear.js" defer></script>
 </body>
 </html>

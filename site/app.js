@@ -322,6 +322,14 @@
       greeting(); renderMoods(); renderGenres(); renderCatalog(); syncModes(); syncPlayState();
       const c = current(); if (c) updateNowPlaying(c);
     });
+    window.TCApp = {
+      tracks: () => tracks,
+      byId,
+      playList(ids, startId) { const list = ids.filter((id) => byId(id)); if (!list.length) return; queue = list; qi = Math.max(0, list.indexOf(startId)); load(byId(queue[qi])); },
+      isPlaying: () => !audio.paused,
+      pause: () => audio.pause(),
+    };
+    document.dispatchEvent(new CustomEvent('tc:ready'));
     if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
   }
   init();
